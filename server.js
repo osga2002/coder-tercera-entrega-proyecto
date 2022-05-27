@@ -1,6 +1,6 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const session = require('express-session')
+const session = require('cookie-session')
 //const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
 
