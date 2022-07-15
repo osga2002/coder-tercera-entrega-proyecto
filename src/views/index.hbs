@@ -1,0 +1,37 @@
+<h1>Bienvenido al Ecommerce de Choho</h1>
+{{#if items}}
+    <h5>Items</h5>
+    <div class="container">
+    {{#each items}}
+        <div class="card">
+        <div id={{id}} class="card text-center border-info col-sm-3">
+            <div class="card-header">{{name}}</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12"><img src={{foto}} width="90%"  alt={{name}}/></div>
+                </div><br />
+                <h5 class="card-title">Descripción</h5>
+                <p class="card-text">{{descripcion}}</p>
+                <div class="row">
+
+                    <label htmlFor="precio" class="col-sm-3 col-form-label">Precio</label>
+                    <div class="col-sm-8"><input type="number" class="form-control-sm text-right" id="precio"
+                            value={{precio}} /></div>
+                </div>
+            </div>
+            <div class="card-footer">
+               <button class="btn btn-outline-primary btn-blok">
+                Detalles</button>
+                </Link>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    {{/each}}
+    </div>
+{{else}}
+    <p>No hay items</p>
+{{/if}}
